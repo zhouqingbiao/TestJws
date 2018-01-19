@@ -25,16 +25,12 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _ManualExtractDataResponse_QNAME = new QName("http://jws.com/", "manualExtractDataResponse");
-    private final static QName _SelectHzGisTpsFwWithColumnName_QNAME = new QName("http://jws.com/", "selectHzGisTpsFwWithColumnName");
     private final static QName _SelectHzFwdjTpfJcdjbResponse_QNAME = new QName("http://jws.com/", "selectHzFwdjTpfJcdjbResponse");
     private final static QName _SelectHzGisTpsFw_QNAME = new QName("http://jws.com/", "selectHzGisTpsFw");
     private final static QName _SelectHzGisTpsFwResponse_QNAME = new QName("http://jws.com/", "selectHzGisTpsFwResponse");
-    private final static QName _SelectHzGisTpsFwWithColumnNameAndCheckResponse_QNAME = new QName("http://jws.com/", "selectHzGisTpsFwWithColumnNameAndCheckResponse");
-    private final static QName _SelectHzGisTpsFwWithColumnNameAndCheck_QNAME = new QName("http://jws.com/", "selectHzGisTpsFwWithColumnNameAndCheck");
     private final static QName _ManualExtractData_QNAME = new QName("http://jws.com/", "manualExtractData");
     private final static QName _SelectHzGisTpsZrz_QNAME = new QName("http://jws.com/", "SelectHzGisTpsZrz");
     private final static QName _SelectHzFwdjTpfJcdjb_QNAME = new QName("http://jws.com/", "selectHzFwdjTpfJcdjb");
-    private final static QName _SelectHzGisTpsFwWithColumnNameResponse_QNAME = new QName("http://jws.com/", "selectHzGisTpsFwWithColumnNameResponse");
     private final static QName _SelectHzGisTpsZrzResponse_QNAME = new QName("http://jws.com/", "SelectHzGisTpsZrzResponse");
 
     /**
@@ -58,14 +54,6 @@ public class ObjectFactory {
      */
     public ManualExtractDataResponse createManualExtractDataResponse() {
         return new ManualExtractDataResponse();
-    }
-
-    /**
-     * Create an instance of {@link SelectHzGisTpsFwWithColumnName }
-     * 
-     */
-    public SelectHzGisTpsFwWithColumnName createSelectHzGisTpsFwWithColumnName() {
-        return new SelectHzGisTpsFwWithColumnName();
     }
 
     /**
@@ -101,14 +89,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SelectHzGisTpsFwWithColumnNameResponse }
-     * 
-     */
-    public SelectHzGisTpsFwWithColumnNameResponse createSelectHzGisTpsFwWithColumnNameResponse() {
-        return new SelectHzGisTpsFwWithColumnNameResponse();
-    }
-
-    /**
      * Create an instance of {@link SelectHzGisTpsZrzResponse }
      * 
      */
@@ -125,37 +105,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SelectHzGisTpsFwWithColumnNameAndCheckResponse }
-     * 
-     */
-    public SelectHzGisTpsFwWithColumnNameAndCheckResponse createSelectHzGisTpsFwWithColumnNameAndCheckResponse() {
-        return new SelectHzGisTpsFwWithColumnNameAndCheckResponse();
-    }
-
-    /**
-     * Create an instance of {@link SelectHzGisTpsFwWithColumnNameAndCheck }
-     * 
-     */
-    public SelectHzGisTpsFwWithColumnNameAndCheck createSelectHzGisTpsFwWithColumnNameAndCheck() {
-        return new SelectHzGisTpsFwWithColumnNameAndCheck();
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ManualExtractDataResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://jws.com/", name = "manualExtractDataResponse")
     public JAXBElement<ManualExtractDataResponse> createManualExtractDataResponse(ManualExtractDataResponse value) {
         return new JAXBElement<ManualExtractDataResponse>(_ManualExtractDataResponse_QNAME, ManualExtractDataResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsFwWithColumnName }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzGisTpsFwWithColumnName")
-    public JAXBElement<SelectHzGisTpsFwWithColumnName> createSelectHzGisTpsFwWithColumnName(SelectHzGisTpsFwWithColumnName value) {
-        return new JAXBElement<SelectHzGisTpsFwWithColumnName>(_SelectHzGisTpsFwWithColumnName_QNAME, SelectHzGisTpsFwWithColumnName.class, null, value);
     }
 
     /**
@@ -186,24 +141,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsFwWithColumnNameAndCheckResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzGisTpsFwWithColumnNameAndCheckResponse")
-    public JAXBElement<SelectHzGisTpsFwWithColumnNameAndCheckResponse> createSelectHzGisTpsFwWithColumnNameAndCheckResponse(SelectHzGisTpsFwWithColumnNameAndCheckResponse value) {
-        return new JAXBElement<SelectHzGisTpsFwWithColumnNameAndCheckResponse>(_SelectHzGisTpsFwWithColumnNameAndCheckResponse_QNAME, SelectHzGisTpsFwWithColumnNameAndCheckResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsFwWithColumnNameAndCheck }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzGisTpsFwWithColumnNameAndCheck")
-    public JAXBElement<SelectHzGisTpsFwWithColumnNameAndCheck> createSelectHzGisTpsFwWithColumnNameAndCheck(SelectHzGisTpsFwWithColumnNameAndCheck value) {
-        return new JAXBElement<SelectHzGisTpsFwWithColumnNameAndCheck>(_SelectHzGisTpsFwWithColumnNameAndCheck_QNAME, SelectHzGisTpsFwWithColumnNameAndCheck.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ManualExtractData }{@code >}}
      * 
      */
@@ -228,15 +165,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzFwdjTpfJcdjb")
     public JAXBElement<SelectHzFwdjTpfJcdjb> createSelectHzFwdjTpfJcdjb(SelectHzFwdjTpfJcdjb value) {
         return new JAXBElement<SelectHzFwdjTpfJcdjb>(_SelectHzFwdjTpfJcdjb_QNAME, SelectHzFwdjTpfJcdjb.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsFwWithColumnNameResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzGisTpsFwWithColumnNameResponse")
-    public JAXBElement<SelectHzGisTpsFwWithColumnNameResponse> createSelectHzGisTpsFwWithColumnNameResponse(SelectHzGisTpsFwWithColumnNameResponse value) {
-        return new JAXBElement<SelectHzGisTpsFwWithColumnNameResponse>(_SelectHzGisTpsFwWithColumnNameResponse_QNAME, SelectHzGisTpsFwWithColumnNameResponse.class, null, value);
     }
 
     /**

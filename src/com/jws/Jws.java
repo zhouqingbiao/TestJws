@@ -84,40 +84,4 @@ public interface Jws {
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
 
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "selectHzGisTpsFwWithColumnName", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsFwWithColumnName")
-    @ResponseWrapper(localName = "selectHzGisTpsFwWithColumnNameResponse", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsFwWithColumnNameResponse")
-    @Action(input = "http://jws.com/Jws/selectHzGisTpsFwWithColumnNameRequest", output = "http://jws.com/Jws/selectHzGisTpsFwWithColumnNameResponse")
-    public String selectHzGisTpsFwWithColumnName(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
-
-    /**
-     * 
-     * @param arg2
-     * @param arg1
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "selectHzGisTpsFwWithColumnNameAndCheck", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsFwWithColumnNameAndCheck")
-    @ResponseWrapper(localName = "selectHzGisTpsFwWithColumnNameAndCheckResponse", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsFwWithColumnNameAndCheckResponse")
-    @Action(input = "http://jws.com/Jws/selectHzGisTpsFwWithColumnNameAndCheckRequest", output = "http://jws.com/Jws/selectHzGisTpsFwWithColumnNameAndCheckResponse")
-    public String selectHzGisTpsFwWithColumnNameAndCheck(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0,
-        @WebParam(name = "arg1", targetNamespace = "")
-        String arg1,
-        @WebParam(name = "arg2", targetNamespace = "")
-        String arg2);
-
 }

@@ -10,7 +10,7 @@ public class TestManualExtractData {
 		Jws jws = service.getJwsPort();
 		long start = System.nanoTime();
 
-		jws.manualExtractData("zhouqingbiao", 0);
+		jws.manualExtractData("zhouqingbiao", 1);
 
 		long end = System.nanoTime();
 
