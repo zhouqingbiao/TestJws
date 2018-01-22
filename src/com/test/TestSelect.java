@@ -11,7 +11,7 @@ public class TestSelect {
 
 		long start = System.nanoTime();
 
-		// keys
+		// keys模糊查询关键字
 		String arg0 = "*濮家新村*";
 
 		// index
@@ -20,8 +20,9 @@ public class TestSelect {
 		// 2-->HZ_GIS.TPS_ZRZ
 		int arg1 = 0;
 
-		// rows
+		// rows返回数据条数
 		int arg2 = 30;
+
 		String values = jws.getData(arg0, arg1, arg2);
 		System.out.println(values);
 
