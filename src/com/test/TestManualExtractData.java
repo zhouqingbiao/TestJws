@@ -10,7 +10,10 @@ public class TestManualExtractData {
 		Jws jws = service.getJwsPort();
 		long start = System.nanoTime();
 
-		jws.manualExtractData("zhouqingbiao", 1);
+		// 0-->HZ_GIS.TPS_FW
+		// 1-->HZ_FWDJ.TPF_JCDJB
+		// 2-->HZ_GIS.TPS_ZRZ
+		jws.manualExtractData("zhouqingbiao", 0);
 
 		long end = System.nanoTime();
 

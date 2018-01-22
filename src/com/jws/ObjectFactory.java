@@ -24,14 +24,10 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _GetDataResponse_QNAME = new QName("http://jws.com/", "getDataResponse");
     private final static QName _ManualExtractDataResponse_QNAME = new QName("http://jws.com/", "manualExtractDataResponse");
-    private final static QName _SelectHzFwdjTpfJcdjbResponse_QNAME = new QName("http://jws.com/", "selectHzFwdjTpfJcdjbResponse");
-    private final static QName _SelectHzGisTpsFw_QNAME = new QName("http://jws.com/", "selectHzGisTpsFw");
-    private final static QName _SelectHzGisTpsFwResponse_QNAME = new QName("http://jws.com/", "selectHzGisTpsFwResponse");
+    private final static QName _GetData_QNAME = new QName("http://jws.com/", "getData");
     private final static QName _ManualExtractData_QNAME = new QName("http://jws.com/", "manualExtractData");
-    private final static QName _SelectHzGisTpsZrz_QNAME = new QName("http://jws.com/", "SelectHzGisTpsZrz");
-    private final static QName _SelectHzFwdjTpfJcdjb_QNAME = new QName("http://jws.com/", "selectHzFwdjTpfJcdjb");
-    private final static QName _SelectHzGisTpsZrzResponse_QNAME = new QName("http://jws.com/", "SelectHzGisTpsZrzResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.jws
@@ -41,11 +37,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SelectHzGisTpsFw }
+     * Create an instance of {@link GetDataResponse }
      * 
      */
-    public SelectHzGisTpsFw createSelectHzGisTpsFw() {
-        return new SelectHzGisTpsFw();
+    public GetDataResponse createGetDataResponse() {
+        return new GetDataResponse();
     }
 
     /**
@@ -57,14 +53,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SelectHzFwdjTpfJcdjbResponse }
-     * 
-     */
-    public SelectHzFwdjTpfJcdjbResponse createSelectHzFwdjTpfJcdjbResponse() {
-        return new SelectHzFwdjTpfJcdjbResponse();
-    }
-
-    /**
      * Create an instance of {@link ManualExtractData }
      * 
      */
@@ -73,35 +61,20 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SelectHzGisTpsZrz }
+     * Create an instance of {@link GetData }
      * 
      */
-    public SelectHzGisTpsZrz createSelectHzGisTpsZrz() {
-        return new SelectHzGisTpsZrz();
+    public GetData createGetData() {
+        return new GetData();
     }
 
     /**
-     * Create an instance of {@link SelectHzFwdjTpfJcdjb }
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetDataResponse }{@code >}}
      * 
      */
-    public SelectHzFwdjTpfJcdjb createSelectHzFwdjTpfJcdjb() {
-        return new SelectHzFwdjTpfJcdjb();
-    }
-
-    /**
-     * Create an instance of {@link SelectHzGisTpsZrzResponse }
-     * 
-     */
-    public SelectHzGisTpsZrzResponse createSelectHzGisTpsZrzResponse() {
-        return new SelectHzGisTpsZrzResponse();
-    }
-
-    /**
-     * Create an instance of {@link SelectHzGisTpsFwResponse }
-     * 
-     */
-    public SelectHzGisTpsFwResponse createSelectHzGisTpsFwResponse() {
-        return new SelectHzGisTpsFwResponse();
+    @XmlElementDecl(namespace = "http://jws.com/", name = "getDataResponse")
+    public JAXBElement<GetDataResponse> createGetDataResponse(GetDataResponse value) {
+        return new JAXBElement<GetDataResponse>(_GetDataResponse_QNAME, GetDataResponse.class, null, value);
     }
 
     /**
@@ -114,30 +87,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzFwdjTpfJcdjbResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetData }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzFwdjTpfJcdjbResponse")
-    public JAXBElement<SelectHzFwdjTpfJcdjbResponse> createSelectHzFwdjTpfJcdjbResponse(SelectHzFwdjTpfJcdjbResponse value) {
-        return new JAXBElement<SelectHzFwdjTpfJcdjbResponse>(_SelectHzFwdjTpfJcdjbResponse_QNAME, SelectHzFwdjTpfJcdjbResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsFw }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzGisTpsFw")
-    public JAXBElement<SelectHzGisTpsFw> createSelectHzGisTpsFw(SelectHzGisTpsFw value) {
-        return new JAXBElement<SelectHzGisTpsFw>(_SelectHzGisTpsFw_QNAME, SelectHzGisTpsFw.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsFwResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzGisTpsFwResponse")
-    public JAXBElement<SelectHzGisTpsFwResponse> createSelectHzGisTpsFwResponse(SelectHzGisTpsFwResponse value) {
-        return new JAXBElement<SelectHzGisTpsFwResponse>(_SelectHzGisTpsFwResponse_QNAME, SelectHzGisTpsFwResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://jws.com/", name = "getData")
+    public JAXBElement<GetData> createGetData(GetData value) {
+        return new JAXBElement<GetData>(_GetData_QNAME, GetData.class, null, value);
     }
 
     /**
@@ -147,33 +102,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://jws.com/", name = "manualExtractData")
     public JAXBElement<ManualExtractData> createManualExtractData(ManualExtractData value) {
         return new JAXBElement<ManualExtractData>(_ManualExtractData_QNAME, ManualExtractData.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsZrz }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "SelectHzGisTpsZrz")
-    public JAXBElement<SelectHzGisTpsZrz> createSelectHzGisTpsZrz(SelectHzGisTpsZrz value) {
-        return new JAXBElement<SelectHzGisTpsZrz>(_SelectHzGisTpsZrz_QNAME, SelectHzGisTpsZrz.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzFwdjTpfJcdjb }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "selectHzFwdjTpfJcdjb")
-    public JAXBElement<SelectHzFwdjTpfJcdjb> createSelectHzFwdjTpfJcdjb(SelectHzFwdjTpfJcdjb value) {
-        return new JAXBElement<SelectHzFwdjTpfJcdjb>(_SelectHzFwdjTpfJcdjb_QNAME, SelectHzFwdjTpfJcdjb.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SelectHzGisTpsZrzResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://jws.com/", name = "SelectHzGisTpsZrzResponse")
-    public JAXBElement<SelectHzGisTpsZrzResponse> createSelectHzGisTpsZrzResponse(SelectHzGisTpsZrzResponse value) {
-        return new JAXBElement<SelectHzGisTpsZrzResponse>(_SelectHzGisTpsZrzResponse_QNAME, SelectHzGisTpsZrzResponse.class, null, value);
     }
 
 }

@@ -26,62 +26,41 @@ public interface Jws {
 
     /**
      * 
+     * @param arg2
      * @param arg1
      * @param arg0
+     * @return
+     *     returns java.lang.String
      */
     @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getData", targetNamespace = "http://jws.com/", className = "com.jws.GetData")
+    @ResponseWrapper(localName = "getDataResponse", targetNamespace = "http://jws.com/", className = "com.jws.GetDataResponse")
+    @Action(input = "http://jws.com/Jws/getDataRequest", output = "http://jws.com/Jws/getDataResponse")
+    public String getData(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        int arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        int arg2);
+
+    /**
+     * 
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "manualExtractData", targetNamespace = "http://jws.com/", className = "com.jws.ManualExtractData")
     @ResponseWrapper(localName = "manualExtractDataResponse", targetNamespace = "http://jws.com/", className = "com.jws.ManualExtractDataResponse")
     @Action(input = "http://jws.com/Jws/manualExtractDataRequest", output = "http://jws.com/Jws/manualExtractDataResponse")
-    public void manualExtractData(
+    public boolean manualExtractData(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
         int arg1);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "SelectHzGisTpsZrz")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "SelectHzGisTpsZrz", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsZrz")
-    @ResponseWrapper(localName = "SelectHzGisTpsZrzResponse", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsZrzResponse")
-    @Action(input = "http://jws.com/Jws/SelectHzGisTpsZrzRequest", output = "http://jws.com/Jws/SelectHzGisTpsZrzResponse")
-    public String selectHzGisTpsZrz(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "selectHzFwdjTpfJcdjb", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzFwdjTpfJcdjb")
-    @ResponseWrapper(localName = "selectHzFwdjTpfJcdjbResponse", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzFwdjTpfJcdjbResponse")
-    @Action(input = "http://jws.com/Jws/selectHzFwdjTpfJcdjbRequest", output = "http://jws.com/Jws/selectHzFwdjTpfJcdjbResponse")
-    public String selectHzFwdjTpfJcdjb(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "selectHzGisTpsFw", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsFw")
-    @ResponseWrapper(localName = "selectHzGisTpsFwResponse", targetNamespace = "http://jws.com/", className = "com.jws.SelectHzGisTpsFwResponse")
-    @Action(input = "http://jws.com/Jws/selectHzGisTpsFwRequest", output = "http://jws.com/Jws/selectHzGisTpsFwResponse")
-    public String selectHzGisTpsFw(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
 
 }

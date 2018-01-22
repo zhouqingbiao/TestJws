@@ -11,8 +11,17 @@ public class TestSelect {
 
 		long start = System.nanoTime();
 
+		// keys
 		String arg0 = "*濮家新村*";
-		String values = jws.selectHzGisTpsZrz(arg0);
+
+		// 0-->HZ_GIS.TPS_FW
+		// 1-->HZ_FWDJ.TPF_JCDJB
+		// 2-->HZ_GIS.TPS_ZRZ
+		int arg1 = 0;
+
+		// rows
+		int arg2 = 30;
+		String values = jws.getData(arg0, arg1, arg2);
 		System.out.println(values);
 
 		long end = System.nanoTime();

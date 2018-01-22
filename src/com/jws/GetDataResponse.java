@@ -3,20 +3,21 @@ package com.jws;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>selectHzFwdjTpfJcdjb complex type的 Java 类。
+ * <p>getDataResponse complex type的 Java 类。
  * 
  * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="selectHzFwdjTpfJcdjb">
+ * &lt;complexType name="getDataResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,35 +27,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "selectHzFwdjTpfJcdjb", propOrder = {
-    "arg0"
+@XmlType(name = "getDataResponse", propOrder = {
+    "_return"
 })
-public class SelectHzFwdjTpfJcdjb {
+public class GetDataResponse {
 
-    protected String arg0;
+    @XmlElement(name = "return")
+    protected String _return;
 
     /**
-     * 获取arg0属性的值。
+     * 获取return属性的值。
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getArg0() {
-        return arg0;
+    public String getReturn() {
+        return _return;
     }
 
     /**
-     * 设置arg0属性的值。
+     * 设置return属性的值。
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setArg0(String value) {
-        this.arg0 = value;
+    public void setReturn(String value) {
+        this._return = value;
     }
 
 }
