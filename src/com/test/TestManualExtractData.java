@@ -13,7 +13,7 @@ public class TestManualExtractData {
 		// 0-->HZ_GIS.TPS_FW
 		// 1-->HZ_FWDJ.TPF_JCDJB
 		// 2-->HZ_GIS.TPS_ZRZ
-		jws.manualExtractData("zhouqingbiao", 0);
+		jws.manualExtractData("zhouqingbiao", 2);
 
 		long end = System.nanoTime();
 
