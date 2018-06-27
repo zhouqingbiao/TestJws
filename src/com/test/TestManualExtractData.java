@@ -5,21 +5,21 @@ import com.jws.JwsService;
 
 public class TestManualExtractData {
 
-	public static void main(String[] args) {
-		JwsService service = new JwsService();
-		Jws jws = service.getJwsPort();
-		long start = System.nanoTime();
+    public static void main(String[] args) {
+        JwsService service = new JwsService();
+        Jws jws = service.getJwsPort();
+        long start = System.nanoTime();
 
-		// 0-->HZ_GIS.TPS_FW
-		// 1-->HZ_FWDJ.TPF_JCDJB
-		// 2-->HZ_GIS.TPS_ZRZ
-		jws.manualExtractData("zhouqingbiao", 2);
+        // 0-->HZ_GIS.TPS_FW
+        // 1-->HZ_FWDJ.TPF_JCDJB
+        // 2-->HZ_GIS.TPS_ZRZ
+        jws.manualExtractData("zhouqingbiao", 2);
 
-		long end = System.nanoTime();
+        long end = System.nanoTime();
 
-		System.out.println((end - start) + "纳秒");
-		System.out.println((end - start) / 1000000 + "毫秒");
-		System.out.println((end - start) / 1000000000 + "秒");
+        System.out.println((end - start) + "纳秒");
+        System.out.println((end - start) / 1000000 + "毫秒");
+        System.out.println((end - start) / 1000000000 + "秒");
 
-	}
+    }
 }
