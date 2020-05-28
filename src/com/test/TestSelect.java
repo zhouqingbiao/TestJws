@@ -6,8 +6,8 @@ import com.jws.JwsService;
 public class TestSelect {
 
     public static void main(String[] args) {
-        JwsService service = new JwsService();
-        Jws jws = service.getJwsPort();
+        JwsService jwsService = new JwsService();
+        Jws jws = jwsService.getJwsPort();
 
         long start = System.nanoTime();
 
